@@ -1,36 +1,18 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Amit Saini's Portfolio - amitsaini.dev
 
-## Getting Started
+Welcome to the repository of amitsaini.dev, a personal portfolio website that showcases the work and skills of Amit Saini, a staff software engineer.
 
-First, run the development server:
+![Website Screenshot](https://amitsaini.dev/website-snapshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🚀 Technologies Used
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js 13**: The latest and greatest of Next.js including
+  - **Server Components**
+  - **Server Actions**
+  
+- **TypeScript**: Adds static typing to JavaScript, enhancing developer productivity and codebase robustness.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Tailwind CSS**: A utility-first CSS framework that allows for rapid UI development without leaving your HTML.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 🤝 Contributions
+While this is a personal project, if you have suggestions, issues, or improvements, feel free to open a pull request or an issue. Contributions are welcomed!
