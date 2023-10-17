@@ -5,6 +5,7 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { BsLinkedin } from "react-icons/bs";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -31,9 +32,9 @@ export default function Skills() {
     >
       <SectionHeading>My skills</SectionHeading>
       <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {skillsData.map((skill, index) => (
+        {skillsData.map(({ skillName, icon }, index) => (
           <motion.li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="bg-white borderBlack rounded-xl px-2 py-1 sm:px-5 sm:py-3 dark:bg-white/10 dark:text-white/80 flex items-center gap-1.5"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -43,7 +44,8 @@ export default function Skills() {
             }}
             custom={index}
           >
-            {skill}
+            {icon}
+            {skillName}
           </motion.li>
         ))}
       </ul>
