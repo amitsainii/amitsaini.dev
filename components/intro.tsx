@@ -7,7 +7,7 @@ import { BsLinkedin } from "react-icons/bs";
 import { TiDownload } from "react-icons/ti";
 import { PiHandWavingLight } from "react-icons/pi";
 import { GiMicrophone } from "react-icons/gi";
-import { BsHeartFill } from "react-icons/bs";
+import { BsHeartFill, BsGithub } from "react-icons/bs";
 import { TbWorldWww } from "react-icons/tb";
 import { MdEngineering } from "react-icons/md";
 import { FaSquareXTwitter } from "react-icons/fa6";
@@ -82,22 +82,31 @@ export default function Intro() {
           Download Resume{" "}
           <TiDownload className="opacity-60 transition" />
         </a>
+        <div className="flex gap-2">
+          <a
+            className="bg-white p-4 text-gray-700 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/30 dark:text-white"
+            href="https://linkedin.com/in/amitsainii"
+            target="_blank"
+          >
+            <BsLinkedin />
+          </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/30 dark:text-white"
-          href="https://linkedin.com/in/amitsainii"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
+          <a
+            className="bg-white p-4 text-gray-700 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/30 dark:text-white"
+            href="https://twitter.com/_amitsainii"
+            target="_blank"
+          >
+            <FaSquareXTwitter />
+          </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/30 dark:text-white"
-          href="https://github.com/amitsainii"
-          target="_blank"
-        >
-          <FaSquareXTwitter />
-        </a>
+          <a
+            className="bg-white p-4 text-gray-700 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/30 dark:text-white"
+            href="https://github.com/amitsainii"
+            target="_blank"
+          >
+            <BsGithub />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
