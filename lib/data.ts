@@ -1,26 +1,41 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
+import { AiFillHome, AiFillHtml5 } from "react-icons/ai";
+import { FaUserAlt } from "react-icons/fa";
+import { FaLaptopCode, FaReact, FaNodeJs, FaAngular } from "react-icons/fa";
+import { MdWork } from "react-icons/md";
+import { BiLogoCss3 } from "react-icons/bi";
+import { SiJavascript, SiTypescript } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
+import { GrGraphQl } from "react-icons/gr";
+import { SiNestjs, SiPwa, SiJest, SiTailwindcss, SiGithubactions } from "react-icons/si";
+import { MdContactMail } from "react-icons/md";
 
 export const links = [
   {
     name: "Home",
     hash: "#home",
+    icon: React.createElement(AiFillHome),
   },
   {
     name: "About",
     hash: "#about",
+    icon: React.createElement(FaUserAlt),
   },
   {
     name: "Skills",
     hash: "#skills",
+    icon: React.createElement(FaLaptopCode),
   },
   {
     name: "Experience",
     hash: "#experience",
+    icon: React.createElement(MdWork),
   },
   {
     name: "Contact",
     hash: "#contact",
+    icon: React.createElement(MdContactMail),
   },
 ] as const;
 
@@ -90,20 +105,62 @@ export const experiencesData = [
   },
 ] as const;
 
+
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "GraphQL",
-  "NestJS",
-  "Angular",
-  "PWA",
-  "Jest",
-  "React Testing Library",
-  "Tailwind CSS",
-  "Github Actions"
+  {
+    skillName: "HTML",
+    icon: React.createElement(AiFillHtml5),
+  },
+  {
+    skillName: "CSS",
+    icon: React.createElement(BiLogoCss3),
+  },
+  {
+    skillName: "JavaScript",
+    icon: React.createElement(SiJavascript),
+  },
+  {
+    skillName: "TypeScript",
+    icon: React.createElement(SiTypescript),
+  },
+  {
+    skillName: "React",
+    icon: React.createElement(FaReact),
+  },
+  {
+    skillName: "Next.js",
+    icon: React.createElement(TbBrandNextjs),
+  },
+  {
+    skillName: "Node.js",
+    icon: React.createElement(FaNodeJs),
+  },
+  {
+    skillName: "GraphQL",
+    icon: React.createElement(GrGraphQl),
+  },
+  {
+    skillName: "NestJS",
+    icon: React.createElement(SiNestjs),
+  },
+  {
+    skillName: "Angular",
+    icon: React.createElement(FaAngular),
+  },
+  {
+    skillName: "PWA",
+    icon: React.createElement(SiPwa),
+  },
+  {
+    skillName: "Jest",
+    icon: React.createElement(SiJest),
+  },
+  {
+    skillName: "Tailwind CSS",
+    icon: React.createElement(SiTailwindcss),
+  },
+  {
+    skillName: "Github Actions",
+    icon: React.createElement(SiGithubactions),
+  },
 ] as const;
