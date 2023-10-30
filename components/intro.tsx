@@ -1,34 +1,30 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import React from "react";
-import { motion } from "framer-motion";
-import { BsLinkedin } from "react-icons/bs";
-import { TiDownload } from "react-icons/ti";
-import { PiHandWavingLight } from "react-icons/pi";
-import { GiMicrophone } from "react-icons/gi";
-import { BsHeartFill, BsGithub } from "react-icons/bs";
-import { TbWorldWww } from "react-icons/tb";
-import { MdEngineering } from "react-icons/md";
-import { FaSquareXTwitter } from "react-icons/fa6";
-import { useSectionInView } from "@/lib/hooks";
+import Image from 'next/image';
+import React from 'react';
+import { motion } from 'framer-motion';
+import { BsLinkedin } from 'react-icons/bs';
+import { TiDownload } from 'react-icons/ti';
+import { PiHandWavingLight } from 'react-icons/pi';
+import { GiMicrophone } from 'react-icons/gi';
+import { BsHeartFill, BsGithub } from 'react-icons/bs';
+import { TbWorldWww } from 'react-icons/tb';
+import { MdEngineering } from 'react-icons/md';
+import { FaSquareXTwitter } from 'react-icons/fa6';
+import { useSectionInView } from '@/lib/hooks';
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView('Home', 0.5);
 
   return (
-    <section
-      ref={ref}
-      id="home"
-      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
-    >
+    <section ref={ref} id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
-              type: "tween",
+              type: 'tween',
               duration: 0.2,
             }}
           >
@@ -58,12 +54,10 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        Passionate about the ever-evolving landscape of {" "}
-        <span className="font-bold">Web Development</span> <TbWorldWww className="inline" />, I’m a seasoned {" "}
-        <span className="font-bold">Staff Software Engineer</span> <MdEngineering className="inline" /> and an {" "} 
-        <GiMicrophone className="inline" /> Aspiring Speaker with a {" "}
-        <BsHeartFill className="text-red-500 inline" /> for all things {" "}
-        <span className="font-bold">JavaScript</span>.
+        Passionate about the ever-evolving landscape of <span className="font-bold">Web Development</span>{' '}
+        <TbWorldWww className="inline" />, I’m a seasoned <span className="font-bold">Staff Software Engineer</span>{' '}
+        <MdEngineering className="inline" /> and an <GiMicrophone className="inline" /> Aspiring Speaker with a{' '}
+        <BsHeartFill className="text-red-500 inline" /> for all things <span className="font-bold">JavaScript</span>.
       </motion.h1>
 
       <motion.div
@@ -79,8 +73,7 @@ export default function Intro() {
           href="/Amit-Resume.pdf"
           download
         >
-          Download Resume{" "}
-          <TiDownload className="opacity-60 transition" />
+          Download Resume <TiDownload className="opacity-60 transition" />
         </a>
         <div className="flex gap-2">
           <a

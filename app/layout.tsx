@@ -1,24 +1,21 @@
-import Header from "@/components/header";
-import "./globals.css";
-import { Inter } from "next/font/google";
-import ActiveSectionContextProvider from "@/context/active-section-context";
-import ThemeSwitch from "@/components/theme-switch";
-import ThemeContextProvider from "@/context/theme-context";
+import Header from '@/components/header';
+import './globals.css';
+import { Inter } from 'next/font/google';
+import ActiveSectionContextProvider from '@/context/active-section-context';
+import ThemeSwitch from '@/components/theme-switch';
+import ThemeContextProvider from '@/context/theme-context';
 import { Analytics } from '@vercel/analytics/react';
-import { Toaster } from "react-hot-toast";
+import { Toaster } from 'react-hot-toast';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: "Amit Saini",
-  description: "Passionate about the ever-evolving landscape of web development, I’m a seasoned Staff Software Engineer and an Aspiring Speaker with a heart for all things JavaScript.",
+  title: 'Amit Saini',
+  description:
+    'Passionate about the ever-evolving landscape of web development, I’m a seasoned Staff Software Engineer and an Aspiring Speaker with a heart for all things JavaScript.',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className="!scroll-smooth">
       <body
