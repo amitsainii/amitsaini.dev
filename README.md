@@ -2,7 +2,7 @@
 
 Welcome to the repository of amitsaini.dev, a personal portfolio website that showcases the work and skills of Amit Saini, a staff software engineer.
 
-![Website Screenshot](https://amitsaini.dev/website-snapshot.png)
+![Website Screenshot](https://amitsaini.dev/website-snapshot.jpg)
 
 ## 🚀 Technologies Used
 
